@@ -1,5 +1,8 @@
 # Note Taker
 
+## License 
+ISC License (ISC) [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+
 ## Acceptance Criteria 
 ```
 GIVEN a note-taking application
