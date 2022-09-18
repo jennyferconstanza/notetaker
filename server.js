@@ -2,8 +2,8 @@ const express = require('express');
 const app = express(); 
 const fs = require('fs');
 const path = require('path'); 
+//port 
 const PORT = process.env.PORT || 3001; 
-
 // parse incoming string / array data
 app.use(express.urlencoded ( { extended: true }));
 // parse incoming JSON data
@@ -39,7 +39,6 @@ function validateNote (note) {
 app.get('/api/notes', (req, res) => {
     res.json(notes); 
 });
-
 // route to server, accepts data for usage or server-side storage
 app.post('/api/notes', (req, res) => {
     req.body.id = notes.length.toString(); 
@@ -51,7 +50,6 @@ app.post('/api/notes', (req, res) => {
         res.json(note);
     }
 });
-
 // delete notes
 app.delete('/api/notes/:id', (req, res) => {
     const id = req.params.id;
@@ -63,20 +61,17 @@ app.delete('/api/notes/:id', (req, res) => {
         notes.splice(index, 1)
         return res.json(note);
       } 
-    
     })
 });
-
 // route to index.html 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname,'./public/index.html'));
 }); 
-
 // route to notes.html 
 app.get('/notes', (req, res) => {
     res.sendFile(path.join(__dirname,'./public/notes.html'));
 }); 
-
+//server listening at port
 app.listen(PORT, () => {
     console.log(`API server on port ${PORT}!`);
 });

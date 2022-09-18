@@ -19,7 +19,7 @@ THEN I am presented with empty fields to enter a new note title and the note’s
 ##  Installation Instructions
 In order to run this application the user needs to install the npm package.
 
-## Link
+## Link to Deployed Heroku App
 
 [Deployed Heroku App](https://nameless-beyond-69090.herokuapp.com/)
 
