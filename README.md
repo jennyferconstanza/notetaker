@@ -23,4 +23,4 @@ In order to run this application the user needs to install the npm package.
 
 [Deployed Heroku App]
 
-![Screenshot of Webpage Mockup]()
+![Screenshot of Webpage Mockup](./public/assets/images/screenshotnotesapp.png)
